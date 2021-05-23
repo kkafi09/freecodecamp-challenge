@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  margin:50px 0 0;
+  font-family:Poppins, sans-serif;
+  line-height: 1.5;
+}
+
+.bg-blue{
+  background-color: blue;
+}
+
+section{
+  scroll-margin-top:5rem;
+}
+
+section h2{
+  text-align: center;
+  margin-top: 40px;
+}
+
+img{
+  max-width:50%;
+}
+
+iframe{
+  margin-bottom:30px;
+  max-width:90%;
+}
+
+.container{
+  max-width:700px;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 auto;
+  justify-content: center;
+}
+
+.btn{
+  background-color: blue;
+  border-radius: 5px;
+  box-shadow:2px 2px 3px #023a71;
+  display:inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size:14px;
+  position:relative;
+  transition: all 0.1s ease;
+}
+
+.btn-ghost{
+  box-shadow:none;
+  border:none;
+  background-color: #000;
+  color:white;
+}
+
+.btn-ghost:active{
+  transform:none;
+}
+
+.btn:active{
+  box-shadow: 0 0 0 #023a71;
+}
+
+nav{
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position:fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+}
+
+.nav-link{
+  color: white;
+  text-decoration:none;
+  margin : 0 15px;
+}
+
+.header-left{
+  width:60%;
+  padding: 20px;
+}
+
+.header-right{
+  width:40%;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+
+/* features*/
+.feature{
+  background-color: blue;
+  border-radius: 10px;
+  margin:0 1.66%;
+  padding:10px;
+  width:30%;
+  text-align: center;
+  color: white;
+}
+
+.feature i{
+  font-size:30px;
+  margin-top:15px;
+}
+
+.feature h2{
+  font-size: 18px;
+  margin-top:5px;
+}
+
+.feature p{
+  font-size: 12px;
+  line-height: 24px;
+}
+
+/* join */
+
+form{
+  margin-bottom:40px;
+}
+
+form .flex{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+form input[type="email"]{
+  border-radius:5px;
+  border:0;
+  color: black;
+  display:inline-block;
+  padding:10px 25px;
+  font-size:14px;
+  margin-right: 10px;
+  flex:1;
+}
+
+/* footer */
+footer{
+  background-color: black;
+  text-align: center;
+  color :white;
+  padding:10px;
+}
+
+footer .fa-heart{
+  color:red;
+}
+
+@media (max-width:480px){
+  .header-left, .header-right{
+    width:100%;
+  }
+  
+  .header-rigth{
+    order: 0;
+  }
+  
+  .header-left{
+    order: 1;
+    text-align: center;
+    padding-left:20px;
+  }
+  
+  .header-left h1{
+    display:none;
+  }
+  
+  .feature{
+    margin: 10px;
+    width:100%;
+  }
+  
+  .flex input{
+    width:100%;
+    margin:5px 10px;
+  }
+}

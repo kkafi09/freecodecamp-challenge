@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill in the form</p>
+
+      <form id="survey-form">
+            <label for="name" id="name-label">
+                  Name
+                  <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">
+                  Email
+                  <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">
+                  How Old Are You?
+                  <input type="number" id="number" placeholder="How Old Are You?" required min="15" max="40">
+            </label>    
+            <label for="dropdown" id="dropdown-label">
+                  Which of the following describe your current role?
+                  <select name="" id="dropdown">
+                        <option>Student</option>
+                        <option>Full Time Job</option>
+                        <option>Full Time Learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Other</option>
+                  </select>
+            </label>
+            <label for="improve" id="radio-label">
+                  <p id="would">Would you recommended freecodecamp to a friend?</p> <br/>
+                  <input type="radio" name="improve" value="1" checked> Definitely <br/>
+                  <input type="radio" name="improve" value="2"> Maybe <br/>
+                  <input type="radio" name="improve" value="3"> not sure <br/>
+
+            </label>
+
+            <label for="improve" id="check-label">
+                  <p id="would">Things that should be improved in the future?</p> <br/>
+                  <input type="checkbox" name="improve" value="1" checked> Front-end Projects <br/>
+                  <input type="checkbox" name="improve" value="2"> Back-end Projects<br/>
+                  <input type="checkbox" name="improve" value="3"> Data Visualization <br/>
+                  <input type="checkbox" name="improve" value="4"> Challenges <br/>
+                  <input type="checkbox" name="improve" value="5"> Open Source Community <br/>
+                  <input type="checkbox" name="improve" value="6"> Gitter help rooms <br/>
+                  <input type="checkbox" name="improve" value="7"> Videos <br/>
+                  <input type="checkbox" name="improve" value="8"> City Meetups <br/>
+                  <input type="checkbox" name="improve" value="9"> Wiki <br/>
+                  <input type="checkbox" name="improve" value="10"> Forum <br/>
+                  <input type="checkbox" name="improve" value="11"> Additional Courses <br/>
+
+            </label>
+
+            <p> Any comments or Suggestions?</p>
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                 
+                  
+            <button id="submit">Submit</button>   
+      </form>
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

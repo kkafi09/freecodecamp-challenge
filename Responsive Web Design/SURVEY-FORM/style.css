@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  background-color: blue;
+}
+
+h1,
+#description {
+  text-align: center;
+  color: white;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px 40px;
+  background-color: rgb(241, 147, 234);
+  border-radius: 5px;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+#dropdown,
+#textarea,
+select {
+  width: 100%;
+  height: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+#radio-label {
+  display: block;
+}
+
+input[type="radio"] {
+  margin-bottom: 10px;
+}
+
+#textarea {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+#submit {
+  background-color: blue;
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#would {
+  margin-bottom: -8px;
+}
